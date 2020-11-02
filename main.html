@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    
+</head>
+
+<body>
+
+        <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-sm bg-dark ">
+                <a class="navbar-brand" href="#">
+                  <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">Online Shop</a>
+                  <button class="navbar-toggler" id="nav-collapse-btn" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="fa fa-bars"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav">
+                    <a href="/main.html" class="nav-item nav-link active"><i class="fas fa-home"></i> Home</a>
+                    <a href="/main.html#aboutus" class="nav-item nav-link">
+                      <i class="fas fa-cube"></i> About us</a>
+                    <a href="/contactus.html" class="nav-item nav-link"><i class="fas fa-support"></i> Contact Us</a>
+                    <a href="/shop.html" class="nav-item nav-link"><i class="fa fa-shopping-basket"> Shop</i></a>
+                    <a id="loginlink" href="/login.html" class="nav-item nav-link"><i class="fa fa-sign-in"> Login</i></a>
+                    <a id="logoutlink" onclick="logout()" class="nav-item nav-link" style="display: none;"><i class="fa fa-sign-out"> Logout</i></a>
+
+                  </ul>
+
+                </div>
+                <a id="cartlink" href="/cart.html" class="nav-item nav-link" style="float: right;"><i class="fa fa-shopping-cart"></i> Cart <span id="nav-cart-number">0</span></a>
+              </nav>
+            </div>
+         </div>
+      
+           <div class="container">
+            <img style="width: 100%; height: 500px;" src="/img/shopping-xlarge.jpg" alt="">
+            <div class="row mt-3 p-2 mb-2" style="background-color: cornsilk;">
+              <div class="col-lg-4 col-sm-12" >
+                <img style="width: 100%; height: 200px;" src="/img/mens.jpg" alt="">
+                <button class="btn btn-light btn-over" onclick="changepage()">Men</button>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <img style="width: 100%; height: 200px;" src="/img/mobs.jpg" alt="">
+                <button class="btn btn-light btn-over" onclick="changepage()">Mobiles</button>
+
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <img style="width: 100%; height: 200px;" src="/img/women.jpg" alt="">
+                <button class="btn btn-light btn-over" onclick="changepage()">women</button>
+              </div>
+            </div>
+            <div class="row" id="aboutus">
+              <div class="mt-5 aboutus-header">
+                <h1>-Our Mission-</h1>
+                <h3>to provide the most effective shopping online website</h3>
+              </div>
+              <div class="mt-3 mb-4 aboutus-body">
+                <h2>About us</h2>
+                <p>Welcome to Shop online, your number one source for all product, ie:mobiles, shoes, bags. We're dedicated to giving you the very best of products, with a focus on characteristics like dependability, customer service and uniqueness.
+                  Founded in 2020 by Pola Malak, Shop online has come a long way from its beginnings. When Shop online first started out, my passion was providing the best products for all customers , and it gave me the impetus to turn hard work and inspiration into to a booming online store. We now serve customers all over the world, and are thrilled to be a part of the industry.
+                  
+                  We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+                  
+                  Sincerely,<br>
+                  Pola Malak,</p>
+              </div>
+            </div>
+           </div>
+           <footer class="footer-distributed">
+
+            <div class="footer-left">
+      
+              <h3>Online<span>Shop</span></h3>
+      
+              <p class="footer-links">
+                <a href="/main.html">Home</a>
+                ·
+                <a href="/contactus.html">Contact Us</a>
+                ·
+                <a href="/shop.html">Shop</a>
+                ·
+                <a href="#aboutus">About</a>
+                ·
+                <a href="#">Faq</a>
+                
+              </p>
+      
+              <p class="footer-company-name">Online Shop &copy; 2020</p>
+            </div>
+      
+            <div class="footer-center">
+      
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Iti Mansoura</span> Cairo, Egypt</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 000 123456</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:polamalak96@gmail.com">polamalak96@gmail.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>About the company</span>
+                Online Shop is an online web store &amp; SEO .
+              </p>
+      
+              <div class="footer-icons">
+      
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+      
+              </div>
+      
+            </div>
+      
+          </footer>
+         
+    
+    <script src="/js/JQuery-3.3.1.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/main.js"></script>
+  </body>    
+</html>

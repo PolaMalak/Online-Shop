@@ -1,0 +1,10 @@
+[
+    {"productName" : "Iphone 10","productPrice":"1000","productImg":"img/iphone10.jpeg"},
+    {"productName" : "Galaxy S20","productPrice":"800","productImg":"img/S20.jpg"},
+    {"productName" : "ROG Phone 3","productPrice":"799","productImg":"img/Asus-ROG-Phone-3.jpg"},
+    {"productName" : "Xiaomi BlackShark 3","productPrice":"800","productImg":"img/shark3.jpg"},
+    {"productName" : "Oppo Reno 4" ,"productPrice" : "300" , "productImg" : "img/reno4.jpg"},
+    {"productName" : "Realme 6" ,"productPrice" :"200" , "productImg" : "img/realme6.jpg"},
+    {"productName" : "Realme c3" ,"productPrice" :"300" , "productImg" : "img/realme.jpg"},
+    {"productName" : "Poco f1" ,"productPrice" :"250" , "productImg" : "img/poco.jpg"}
+]
